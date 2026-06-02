@@ -1,0 +1,123 @@
+﻿@using StellarMindsWebApp.Models.ObjetoCeleste
+@using StellarMindsWebApp.Models.PrestamoModel
+@model Models.Observacion.AltaObservacionModel
+
+@{
+    ViewData["Title"] = "Crear observación";
+
+    bool evaluado = ViewBag.Evaluado == true;
+}
+
+<h1>Crear observación</h1>
+
+<hr />
+
+@if (TempData["Error"] != null)
+{
+    <p class="text-danger">@TempData["Error"]</p>
+}
+@if (TempData["Exito"] != null)
+{
+    <p class="text-success">@TempData["Exito"]</p>
+}
+
+<div class="row">
+    <div class="col-md-4">
+
+        <form method="post">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="PrestamoVinculadoId" class="control-label"></label>
+
+                @if (ViewBag.Prestamos != null && ViewBag.Prestamos.Count > 0)
+                {
+                    <select asp-for="PrestamoVinculadoId" class="form-control">
+                        <option value="" selected disabled hidden>Seleccione un préstamo</option>
+
+                        @foreach (PrestamoEvaluacionModel prestamo in ViewBag.Prestamos)
+                        {
+                            <option value="@prestamo.IdPrestamo">
+                                @($"Préstamo {prestamo.IdPrestamo} | Telescopio: {prestamo.TelescopioMarcaModelo} | Visual: {(string.IsNullOrWhiteSpace(prestamo.OcularMarcaModelo) ? prestamo.CamaraMarcaModelo : prestamo.OcularMarcaModelo)}")
+                            </option>
+                        }
+                    </select>
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        No hay préstamos disponibles.
+                    </div>
+                }
+
+                <span asp-validation-for="PrestamoVinculadoId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ObjetoVisualizadoId" class="control-label"></label>
+                @if (ViewBag.ObjetosCelestes != null && ViewBag.ObjetosCelestes.Count > 0)
+                {
+                    <select asp-for="ObjetoVisualizadoId" class="form-control">
+                        <option value="" selected disabled hidden>Seleccione un objeto celeste</option>
+
+                        @foreach (ObjetoCelesteModel objeto in ViewBag.ObjetosCelestes)
+                        {
+                            <option value="@objeto.Id">
+                                @objeto.Nombre
+                            </option>
+                        }
+                    </select>
+                }else{
+                        <div class="alert alert-warning">
+                            No hay objetos celestes disponibles.
+                        </div>
+                }
+                <span asp-validation-for="ObjetoVisualizadoId" class="text-danger"></span>
+            </div>
+
+            <input type="hidden" asp-for="FechaObservacion" />
+            <input type="hidden" asp-for="ResultadoEvaluacion" />
+            <input type="hidden" asp-for="Detalle" />
+            <input type="hidden" asp-for="EsAstrofotografia" />
+
+            @if (evaluado)
+            {
+                <div class="alert alert-info">
+                    Evaluación realizada.
+                </div>
+            }
+
+            <div class="form-group mt-3">
+
+                <button type="submit"
+                        class="btn btn-secondary"
+                        formaction="@Url.Action("EvaluarAstrofotografia", "Observacion")">
+                    Evaluar
+                </button>
+
+                @if (evaluado)
+                {
+                    <button type="submit"
+                            class="btn btn-primary"
+                            formaction="@Url.Action("Crear", "Observacion")">
+                        Dar de alta
+                    </button>
+                }
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index">Volver</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

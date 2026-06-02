@@ -1,0 +1,115 @@
+﻿@model IEnumerable<StellarMindsWebApp.Models.PrestamoModel.PrestamoModel>
+
+@{
+    ViewData["Title"] = "PrestamosUsuario";
+}
+
+<h1>Prestamos del usuario</h1>
+
+@if (Model == null || !Model.Any())
+{
+    <div>
+        <p>El usuario seleccionado no tiene prestamos activos</p>
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdPrestamo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Inicio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fin)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EquipoVisualId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EquipoVisualMarcaModelo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MonturaId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MonturaMarcaModelo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TelescopioId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TelescopioMarcaModelo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SocioId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SocioNombreApellido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdPrestamo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Inicio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EquipoVisualId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EquipoVisualMarcaModelo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MonturaId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MonturaMarcaModelo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TelescopioId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TelescopioMarcaModelo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SocioId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SocioNombreApellido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estado)
+                    </td>
+                    <td>
+                        <form asp-controller="Prestamo"
+                              asp-action="Devolver"
+                              asp-route-prestamoId="@item.IdPrestamo"
+                              method="post"
+                              style="display:inline;">
+
+                            <button type="submit" class="btn btn-warning btn-sm">
+                                Devolver
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

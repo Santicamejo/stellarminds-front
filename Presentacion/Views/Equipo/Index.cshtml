@@ -1,0 +1,111 @@
+﻿@using DTOs.DTOs.Equipo
+@model IEnumerable<DTOs.DTOs.Equipo.EquipoDTO>
+
+@{
+    string? nombre = Context.Session.GetString("Nombre");
+    int? rol = Context.Session.GetInt32("Rol");
+    string? email = Context.Session.GetString("Email");
+}
+
+@{
+    ViewData["Title"] = "Equipos";
+}
+
+<h1>Equipos</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        <p>@TempData["SuccessMessage"]</p>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-warning" role="alert">
+        <p>@TempData["ErrorMessage"]</p>
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Unidades</th>
+            <th>Tipo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (EquipoDTO unE in Model)
+        {
+            string tipoEdit = "";
+            string tipoEquipo = "";
+
+            switch (unE)
+            {
+                case DTOs.DTOs.Equipo.TelescopioDTO:
+                    tipoEdit = "EditTelescopio";
+                    tipoEquipo = "Telescopio";
+                    break;
+
+                case DTOs.DTOs.Equipo.MonturaDTO:
+                    tipoEdit = "EditMontura";
+                    tipoEquipo = "Montura";
+                    break;
+
+                case DTOs.DTOs.Equipo.OcularDTO:
+                    tipoEdit = "EditOcular";
+                    tipoEquipo = "Ocular";
+                    break;
+
+                case DTOs.DTOs.Equipo.CamaraDTO:
+                    tipoEdit = "EditCamara";
+                    tipoEquipo = "Camara";
+                    break;
+            }
+
+            <tr>
+                <td>@Html.DisplayFor(modelItem => unE.Id)</td>
+                <td>@Html.DisplayFor(modelItem => unE.Marca)</td>
+                <td>@Html.DisplayFor(modelItem => unE.Modelo)</td>
+                <td>@Html.DisplayFor(modelItem => unE.CantidadDisponible)</td>
+                <td>@tipoEquipo</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@unE.Id">Detalles</a>
+                    @if(email != null && rol == 0)
+                    {
+                        <span>|</span>
+                        <a asp-action="@tipoEdit" asp-route-id="@unE.Id">Editar</a>
+                        <span>|</span>
+                        <a asp-action="Delete" asp-route-id="@unE.Id">Eliminar</a>
+                    }
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+@if (email != null && rol == 0)
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CreateTelescopio">Alta telescopio</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CreateMontura">Alta montura</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CreateCamara">Alta cámara</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CreateOcular">Alta ocular</a>
+    </li>
+}

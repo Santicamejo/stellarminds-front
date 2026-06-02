@@ -1,0 +1,234 @@
+﻿@using StellarMindsWebApp.Models.Equipo
+@using StellarMindsWebApp.Models.Usuario
+@model StellarMindsWebApp.Models.Prestamo.AltaPrestamoModel
+
+@{
+    ViewData["Title"] = "Alta préstamo";
+}
+
+<h1>Alta de préstamo</h1>
+
+<hr />
+@if (TempData["Error"] != null)
+{
+    <p class="text-danger">@TempData["Error"]</p>
+}
+<div class="row">
+    <div class="col-md-5">
+
+        <div id="alertaTelescopioDisponibilidad"></div>
+        <div id="alertaMonturaDisponibilidad"></div>
+        <div id="alertaVisualDisponibilidad"></div>
+
+        <form asp-action="Alta" method="post">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Inicio" class="control-label"></label>
+                <input asp-for="Inicio" class="form-control" type="date" />
+                <span asp-validation-for="Inicio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Fin" class="control-label"></label>
+                <input asp-for="Fin" class="form-control" type="date" />
+                <span asp-validation-for="Fin" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="TelescopioId" class="control-label"></label>
+
+                <select asp-for="TelescopioId" class="form-control" onchange="seleccionarTelescopio(this.value)">
+                    <option value="">Seleccione un telescopio</option>
+
+                    @foreach (TelescopioModel telescopio in ViewBag.Telescopios)
+                    {
+                        <option value="@telescopio.Id">
+                            @telescopio.Marca @telescopio.Modelo
+                        </option>
+                    }
+                </select>
+
+                <span asp-validation-for="TelescopioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="MonturaId" class="control-label"></label>
+
+                <select asp-for="MonturaId" class="form-control equipo-select" onchange="seleccionarMontura(this.value)">
+                    
+                    <option value="">Seleccione una montura</option>
+
+                    @foreach (MonturaModel montura in ViewBag.Monturas)
+                    {
+                        <option value="@montura.Id">
+                            @montura.Marca @montura.Modelo
+                        </option>
+                    }
+                </select>
+
+                <span asp-validation-for="MonturaId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="EquipoVisualId" class="control-label"></label>
+
+                <select asp-for="EquipoVisualId" class="form-control equipo-select" onchange="seleccionarVisual(this.value)">
+                    
+                    <option value="">Seleccione un ocular o una cámara</option>
+
+                    @foreach (OcularModel ocular in ViewBag.Oculares)
+                    {
+                        <option value="@ocular.Id">
+                            Ocular - @ocular.Marca @ocular.Modelo
+                        </option>
+                    }
+
+                    @foreach (CamaraModel camara in ViewBag.Camaras)
+                    {
+                        <option value="@camara.Id">
+                            Cámara - @camara.Marca @camara.Modelo
+                        </option>
+                    }
+                </select>
+
+                <span asp-validation-for="EquipoVisualId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="SocioId" class="control-label"></label>
+
+                <select asp-for="SocioId" class="form-control">
+                    <option value="">Seleccione un socio</option>
+
+                    @foreach (UsuarioModel socio in ViewBag.Socios)
+                    {
+                        <option value="@socio.Id">
+                             @socio.Id - @socio.Nombre @socio.Apellido
+                        </option>
+                    }
+                </select>
+
+                <span asp-validation-for="SocioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Crear préstamo" class="btn btn-primary" />
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index">Volver al listado</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        async function seleccionarTelescopio(telescopioId) {
+
+            var mensaje = document.getElementById("alertaTelescopioDisponibilidad");
+
+            mensaje.innerHTML = "";
+
+            if (telescopioId === "") {
+                return;
+            }
+
+            try {
+                var respuesta = await fetch("/Prestamo/ConsultarDisponibilidad?equipoId=" + telescopioId);
+
+                if (respuesta.status === 200) {
+                    mensaje.innerHTML = "";
+                    return;
+                }
+
+                var resultado = await respuesta.json();
+
+                mensaje.innerHTML =
+                    '<div class="alert alert-warning">' +
+                    resultado.mensaje +
+                    '</div>';
+            }
+            catch (error) {
+                mensaje.innerHTML =
+                    '<div class="alert alert-danger">' +
+                    'No se pudo consultar la disponibilidad de los telescopios.' +
+                    '</div>';
+            }
+        }
+
+        async function seleccionarMontura(monturaId) {
+
+            var mensaje = document.getElementById("alertaMonturaDisponibilidad");
+
+            mensaje.innerHTML = "";
+
+            if (monturaId === "") {
+                return;
+            }
+
+            try {
+                var respuesta = await fetch("/Prestamo/ConsultarDisponibilidad?equipoId=" + monturaId);
+
+                if (respuesta.status === 200) {
+                    mensaje.innerHTML = "";
+                    return;
+                }
+
+                var resultado = await respuesta.json();
+
+                mensaje.innerHTML =
+                    '<div class="alert alert-warning">' +
+                    resultado.mensaje +
+                    '</div>';
+            }
+            catch (error) {
+                mensaje.innerHTML =
+                    '<div class="alert alert-danger">' +
+                    'No se pudo consultar la disponibilidad de las monturas.' +
+                    '</div>';
+            }
+        }
+
+        async function seleccionarVisual(visualId) {
+
+            var mensaje = document.getElementById("alertaVisualDisponibilidad");
+
+            mensaje.innerHTML = "";
+
+            if (visualId === "") {
+                return;
+            }
+
+            try {
+                var respuesta = await fetch("/Prestamo/ConsultarDisponibilidad?equipoId=" + visualId);
+
+                if (respuesta.status === 200) {
+                    mensaje.innerHTML = "";
+                    return;
+                }
+
+                var resultado = await respuesta.json();
+
+                mensaje.innerHTML =
+                    '<div class="alert alert-warning">' +
+                    resultado.mensaje +
+                    '</div>';
+            }
+            catch (error) {
+                mensaje.innerHTML =
+                    '<div class="alert alert-danger">' +
+                    'No se pudo consultar la disponibilidad de los equipos visuales.' +
+                    '</div>';
+            }
+        }
+    </script>
+}

@@ -1,0 +1,89 @@
+﻿@using System.Globalization
+@model DTOs.DTOs.Equipo.TelescopioDTO
+
+@{
+    ViewData["Title"] = "EditTelescopio";
+}
+
+<h1>Editar Equipo</h1>
+
+<h4>@Model.Modelo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditTelescopio">
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Apertura" class="control-label">Apertura</label>
+                <input asp-for="Apertura"
+                       value="@Model.Apertura.ToString(CultureInfo.InvariantCulture)"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="Apertura" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="RelacionFocal" class="control-label">Relacion focal</label>
+                <input asp-for="RelacionFocal" class="form-control" />
+                <span asp-validation-for="RelacionFocal" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DistanciaFocal" class="control-label"> Distancia focal</label>
+                <input asp-for="DistanciaFocal"
+                       value="@Model.DistanciaFocal.ToString(CultureInfo.InvariantCulture)"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="DistanciaFocal" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label">Peso</label>
+                <input asp-for="Peso"
+                       value="@Model.Peso.ToString(CultureInfo.InvariantCulture)"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label">Marca</label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label">Modelo</label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label">Stock</label>
+                <input asp-for="CantidadDisponible" class="form-control" type="number" step="1" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

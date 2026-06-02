@@ -1,0 +1,57 @@
+﻿@model DTOs.DTOs.Equipo.EditCamaraModel
+
+<h4>EditCamaraModel</h4>
+<hr />
+
+@if (TempData["Error"] != null)
+{
+    <p class="text-danger">@TempData["Error"]</p>
+}
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditarCamara">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label"></label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label"></label>
+                <input asp-for="CantidadDisponible" class="form-control" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoSensor" class="control-label"></label>
+                <input asp-for="TipoSensor" class="form-control" />
+                <span asp-validation-for="TipoSensor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resolucion" class="control-label"></label>
+                <input asp-for="Resolucion" class="form-control" />
+                <span asp-validation-for="Resolucion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TamanoPixel" class="control-label"></label>
+                <input asp-for="TamanoPixel" class="form-control" />
+                <span asp-validation-for="TamanoPixel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

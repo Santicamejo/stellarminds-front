@@ -1,0 +1,129 @@
+﻿@model DTOs.DTOs.Prestamo.AltaPrestamoDTO
+
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using DTOs.DTOs.Equipo
+@using DTOs.DTOs.Usuario
+
+@{
+    ViewData["Title"] = "Alta";
+
+    var telescopios = new List<SelectListItem>();
+    var monturas = new List<SelectListItem>();
+    var visuales = new List<SelectListItem>();
+    var usuarios = new List<SelectListItem>();
+
+    if (ViewBag.Equipos != null)
+    {
+        foreach (EquipoDTO equipo in ViewBag.Equipos)
+        {
+            var item = new SelectListItem
+            {
+                Value = equipo.Id.ToString(),
+                Text = $"{equipo.Marca} {equipo.Modelo}"
+            };
+
+            if (equipo.GetType() == typeof(TelescopioDTO))
+            {
+                telescopios.Add(item);
+            }
+            else if (equipo.GetType() == typeof(MonturaDTO))
+            {
+                monturas.Add(item);
+            }
+            else if (equipo.GetType() == typeof(OcularDTO) || equipo.GetType() == typeof(CamaraDTO))
+            {
+                visuales.Add(item);
+            }
+        }
+    }
+
+    if (ViewBag.Usuarios != null)
+    {
+        foreach (UsuarioDTO usuario in ViewBag.Usuarios)
+        {
+            usuarios.Add(new SelectListItem
+            {
+                Value = usuario.Id.ToString(),
+                Text = $"{usuario.Nombre} {usuario.Apellido}"
+            });
+        }
+    }
+}
+
+<h1>Alta</h1>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<h4>AltaPrestamoDTO</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Alta" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Inicio" class="control-label"></label>
+                <input asp-for="Inicio" class="form-control" />
+                <span asp-validation-for="Inicio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Fin" class="control-label"></label>
+                <input asp-for="Fin" class="form-control" />
+                <span asp-validation-for="Fin" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EquipoVisualId" class="control-label">Equipo Visual</label>
+                <select asp-for="EquipoVisualId" class="form-control" asp-items="visuales">
+                    <option value="">-- Seleccione un equipo visual --</option>
+                </select>
+                <span asp-validation-for="EquipoVisualId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MonturaId" class="control-label">Montura</label>
+                <select asp-for="MonturaId" class="form-control" asp-items="monturas">
+                    <option value="">-- Seleccione una montura --</option>
+                </select>
+                <span asp-validation-for="MonturaId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TelescopioId" class="control-label">Telescopio</label>
+                <select asp-for="TelescopioId" class="form-control" asp-items="telescopios">
+                    <option value="">-- Seleccione un telescopio --</option>
+                </select>
+                <span asp-validation-for="TelescopioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SocioId" class="control-label">Socio</label>
+                <select asp-for="SocioId" class="form-control" asp-items="usuarios">
+                    <option value="">-- Seleccione un socio --</option>
+                </select>
+                <span asp-validation-for="SocioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver al listado</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

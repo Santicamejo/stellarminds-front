@@ -1,0 +1,87 @@
+﻿@using System.Globalization
+@model DTOs.DTOs.Equipo.CamaraDTO
+
+@{
+    ViewData["Title"] = "EditCamara";
+}
+
+<h1>EditCamara</h1>
+
+<h4>CamaraDTO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditCamara">
+            <input type="hidden" asp-for="Id" />
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="TipoSensor" class="control-label">Sensor</label>
+
+                <select asp-for="TipoSensor" class="form-control">
+                    <option value="" disabled hidden>Seleccione un tipo de sensor</option>
+                    <option value="0">CMOD</option>
+                    <option value="1">CCD</option>
+                </select>
+
+                <span asp-validation-for="TipoSensor" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Resolucion" class="control-label">Resolucion</label>
+                <input asp-for="Resolucion"
+                       value="@Model.Resolucion.ToString(CultureInfo.InvariantCulture)"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="Resolucion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TamanoPixel" class="control-label">Pixeles</label>
+                <input asp-for="TamanoPixel"
+                       value="@Model.TamanoPixel.ToString(CultureInfo.InvariantCulture)"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="TamanoPixel" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label">Marca</label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label">Modelo</label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label">Stock</label>
+                <input asp-for="CantidadDisponible" class="form-control" type="number" step="1" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

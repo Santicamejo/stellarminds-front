@@ -1,0 +1,87 @@
+﻿@using System.Globalization
+@model DTOs.DTOs.Equipo.AltaTelescopioDTO
+
+@{
+    ViewData["Title"] = "CreateTelescopio";
+}
+
+<h1>CreateTelescopio</h1>
+
+<h4>AltaTelescopioDTO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateTelescopio">
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Apertura" class="control-label">Apertura</label>
+                <input asp-for="Apertura"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="Apertura" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="RelacionFocal" class="control-label">Relacion focal</label>
+                <input asp-for="RelacionFocal" class="form-control" />
+                <span asp-validation-for="RelacionFocal" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DistanciaFocal" class="control-label">Distancia focal</label>
+                <input asp-for="DistanciaFocal"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="DistanciaFocal" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label">Peso</label>
+                <input asp-for="Peso"
+                       class="form-control"
+                       type="number"
+                       step="any" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label">Marca</label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label">Model</label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label">Stock</label>
+                <input asp-for="CantidadDisponible" class="form-control" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

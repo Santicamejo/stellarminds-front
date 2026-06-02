@@ -1,0 +1,102 @@
+@using DTOs.DTOs.ObjetoCeleste
+@using DTOs.DTOs.Prestamo
+@model DTOs.DTOs.Observaciones.AltaObservacionDTO
+
+@{
+    ViewData["Title"] = "Crear observación";
+
+    bool hayResultadoGemini = !string.IsNullOrWhiteSpace(Model?.Detalle);
+}
+
+<h1>Crear observación</h1>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label asp-for="PrestamoVinculadoId" class="form-label">Préstamo vinculado</label>
+
+        <select asp-for="PrestamoVinculadoId" class="form-select">
+            <option value="" disabled selected hidden>Seleccione un préstamo</option>
+
+            @foreach (var prestamo in ViewBag.PrestamosDeUsuario)
+            {
+                <option value="@prestamo.IdPrestamo">
+                    @prestamo.IdPrestamo - @prestamo.TelescopioMarcaModelo
+                </option>
+            }
+        </select>
+
+        <span asp-validation-for="PrestamoVinculadoId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ObjetoVisualizadoId" class="form-label">Objeto celeste</label>
+
+        <select asp-for="ObjetoVisualizadoId" class="form-select">
+            <option value="" disabled selected hidden>Seleccione un objeto celeste</option>
+
+            @foreach (ObjetoCelesteEvaluacionDTO objetoCeleste in ViewBag.ObjetosCelestes)
+            {
+                <option value="@objetoCeleste.IdObjetoCeleste">
+                    @objetoCeleste.Nombre - @objetoCeleste.Tipo
+                </option>
+            }
+        </select>
+
+        <span asp-validation-for="ObjetoVisualizadoId" class="text-danger"></span>
+    </div>
+
+    @if (Model.ResultadoEvaluacion != StellarMinds.Enums.ResultadoEvaluacion.SIN_EVALUAR)
+    {
+        <div class="mb-3">
+            <label class="form-label">Indicador</label>
+
+            <input type="text"
+                   class="form-control"
+                   value="@Model.ResultadoEvaluacion"
+                   readonly />
+
+            <input type="hidden"
+                   name="ResultadoEvaluacion"
+                   value="@Model.ResultadoEvaluacion" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Detalle</label>
+
+            <textarea name="Detalle"
+                      class="form-control"
+                      rows="4"
+                      readonly>@Model.Detalle</textarea>
+        </div>
+        
+        <div class="mb-3">
+            <label asp-for="FechaObservacion" class="form-label">Fecha de observación</label>
+            <input asp-for="FechaObservacion" type="date" class="form-control" />
+        </div>
+        
+    }
+
+    <button type="submit"
+            class="btn btn-primary"
+            formaction="@Url.Action("Evaluar", "Observacion")">
+        Evaluar
+    </button>
+
+    @if (hayResultadoGemini)
+    {
+        <button type="submit"
+                class="btn btn-success"
+                formaction="@Url.Action("Create", "Observacion")">
+            Crear observación
+        </button>
+    }
+</form>

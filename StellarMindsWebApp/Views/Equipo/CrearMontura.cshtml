@@ -1,0 +1,59 @@
+﻿@using StellarMinds.Enums
+@model DTOs.DTOs.Equipo.AltaMonturaModel
+
+<h4>AltaMonturaModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CrearMontura">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TipoMontura" class="control-label"></label>
+
+                <select asp-for="TipoMontura"
+                        asp-items="Html.GetEnumSelectList<TipoMontura>()"
+                        class="form-control">
+                    <option value="">Seleccione un tipo de montura</option>
+                </select>
+
+                <span asp-validation-for="TipoMontura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CargaUtil" class="control-label"></label>
+                <input asp-for="CargaUtil" class="form-control" />
+                <span asp-validation-for="CargaUtil" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EsComputarizada" /> @Html.DisplayNameFor(model => model.EsComputarizada)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label"></label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label"></label>
+                <input asp-for="CantidadDisponible" class="form-control" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

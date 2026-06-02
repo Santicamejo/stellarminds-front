@@ -1,0 +1,75 @@
+﻿@model IEnumerable<StellarMindsWebApp.Models.Equipo.EquipoModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantidadDisponible)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadDisponible)
+            </td>
+            <td>
+                @Html.ActionLink("Detalles", "Detalles", new { id = item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+    @if (TempData["Error"] != null)
+    {
+        <p class="text-danger">@TempData["Error"]</p>
+    }
+    @if (TempData["Exito"] != null)
+    {
+        <p class="text-success">@TempData["Exito"]</p>
+    }
+</table>
+<ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CrearTelescopio">
+            Crear telescopio
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CrearCamara">
+            Crear cámara
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CrearOcular">
+            Crear ocular
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Equipo" asp-action="CrearMontura">
+            Crear montura
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,109 @@
+﻿@using DTOs.DTOs.Usuario
+@model IEnumerable<UsuarioDTO>
+
+@{
+    string? nombre = Context.Session.GetString("Nombre");
+    int? rol = Context.Session.GetInt32("Rol");
+    string? email = Context.Session.GetString("Email");
+}
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rol)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreUsuario)
+            </td>
+            <td>
+                    @if (item.Rol == StellarMinds.Enums.TipoUsuario.ADMINISTRADOR)
+                {
+                    <p>Administrador</p>
+                }
+                else if (item.Rol == StellarMinds.Enums.TipoUsuario.COORDINADOR)
+                {
+                    <p>Coordinador</p>
+                }
+                else
+                {
+                    <p>Socio</p>
+                }
+            </td>
+            <td>
+                    <a asp-controller="Prestamo"
+                           asp-action="PrestamosUsuario"
+                           asp-route-id="@item.Id">
+                        Prestamos
+                    </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@if (email != null && rol == 0)
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Alta">Alta usuario</a>
+    </li>  
+}

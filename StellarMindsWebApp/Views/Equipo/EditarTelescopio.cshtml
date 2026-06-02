@@ -1,0 +1,63 @@
+﻿@model DTOs.DTOs.Equipo.EditTelescopioModel
+
+<h4>EditTelescopioModel</h4>
+<hr />
+
+@if (TempData["Error"] != null)
+{
+    <p class="text-danger">@TempData["Error"]</p>
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditarTelescopio">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label"></label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <input asp-for="Modelo" class="form-control"/>
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label"></label>
+                <input asp-for="CantidadDisponible" class="form-control" step="any"/>
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Apertura" class="control-label"></label>
+                <input asp-for="Apertura" class="form-control" step="any" />
+                <span asp-validation-for="Apertura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RelacionFocal" class="control-label"></label>
+                <input asp-for="RelacionFocal" class="form-control" step="any" />
+                <span asp-validation-for="RelacionFocal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DistanciaFocal" class="control-label"></label>
+                <input asp-for="DistanciaFocal" class="form-control" step="any" />
+                <span asp-validation-for="DistanciaFocal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" class="form-control" step="any" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

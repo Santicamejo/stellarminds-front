@@ -1,0 +1,192 @@
+﻿@using StellarMinds.Enums
+@model StellarMindsWebApp.Models.Equipo.EquipoDetalleModel
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+    <h4>Detalle del equipo</h4>
+    <hr />
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CantidadDisponible)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CantidadDisponible)
+        </dd>
+
+        <h2>Detalles tecnicos</h2>
+
+        @* Telescopio *@
+        @if (Model.Apertura != null && !string.IsNullOrWhiteSpace(Model.RelacionFocal) && Model.DistanciaFocal != null && Model.Peso != null)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Apertura)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Apertura)
+            </dd>
+        
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.RelacionFocal)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.RelacionFocal)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DistanciaFocal)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DistanciaFocal)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Peso)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Peso)
+            </dd>
+
+            <dt class="col-sm-2">
+                <p>Tipo</p>
+            </dt>
+            <dd class="col-sm-10">
+                <p>Telescopio</p>
+            </dd>
+            <a asp-action="EditarTelescopio" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
+                Editar
+            </a>
+        }
+
+        @* Montura *@
+        @if (Model.TipoMontura != null && Model.EsComputarizada != null && Model.CargaUtil != null)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TipoMontura)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TipoMontura)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CargaUtil)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CargaUtil)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EsComputarizada)
+            </dt>
+            <dd class="col-sm-10">
+                @(Model.EsComputarizada == true ? "Sí" : "No")
+            </dd>
+
+            <dt class="col-sm-2">
+                <p>Tipo</p>
+            </dt>
+            <dd class="col-sm-10">
+                <p>Montura</p>
+            </dd>
+            <a asp-action="EditarMontura" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
+                Editar
+            </a>
+        }
+
+        @* Cámara *@
+        @if (Model.TipoSensor != null && Model.Resolucion != null && Model.TamanoPixel != null)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TipoSensor)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TipoSensor)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Resolucion)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Resolucion)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TamanoPixel)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TamanoPixel)
+            </dd>
+
+            <dt class="col-sm-2">
+                <p>Tipo</p>
+            </dt>
+            <dd class="col-sm-10">
+                <p>Camara</p>
+            </dd>
+            <a asp-action="EditarCamara" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
+                Editar
+            </a>
+        }
+
+        @* Ocular *@
+        @if (Model.Diametro != null && Model.AnguloVision != null)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Diametro)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Diametro)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AnguloVision)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AnguloVision)
+            </dd>
+            
+            <dt class="col-sm-2">
+                <p>Tipo</p>
+            </dt>
+            <dd class="col-sm-10">
+                <p>Ocular</p>
+            </dd>
+            <a asp-action="EditarOcular" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
+                Editar
+            </a>
+        }
+    </dl>
+</div>
+
+<div>
+
+    <form asp-action="Delete" method="post" style="display:inline;">
+        <input type="hidden" name="id" value="@Model.Id" />
+        <button type="submit" class="btn btn-danger btn-sm">
+            Eliminar
+        </button>
+    </form>
+
+</div>
