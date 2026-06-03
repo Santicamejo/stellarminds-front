@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    string? rol = Context.Session.GetString("UsuarioLogeadoRol");
 }
 
 <h1>Index</h1>
@@ -78,14 +79,20 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Rol)
             </td>
-            <td>
-                @Html.ActionLink("Prestamos", "PrestamosUsuario", "Prestamo", new { usuarioId = item.Id })
-            </td>
+                @if (rol == "COORDINADOR")
+                {
+                    <td>
+                        @Html.ActionLink("Prestamos", "PrestamosUsuario", "Prestamo", new { usuarioId = item.Id })
+                    </td>
+                }
         </tr>
 }
     </tbody>
 </table>
 
-<p>
-    <a asp-action="Crear">Agregar nuevo</a>
-</p>
+@if (rol == "COORDINADOR")
+{
+    <p>
+        <a asp-action="Crear">Agregar nuevo</a>
+    </p>
+}

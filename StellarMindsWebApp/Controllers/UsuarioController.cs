@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using StellarMindsWebApp.Auxiliar;
 using StellarMindsWebApp.Enums;
+using StellarMindsWebApp.Filtros;
 using StellarMindsWebApp.Models;
 using StellarMindsWebApp.Models.Usuario;
 
@@ -12,12 +13,23 @@ namespace StellarMindsWebApp.Controllers
     {
 
         private string baseUrl = "http://localhost:5196/api/usuario";
-        
+
+        [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR", "COORDINADOR" })]
         public IActionResult Index()
         {
+            string? token = HttpContext.Session.GetString("TokenJWT");
+
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                TempData["Error"] = "Debe iniciar sesión.";
+                return RedirectToAction("Login", "Usuario");
+            }
+
             HttpResponseMessage respuesta = ClienteHttpAuxiliar.EnviarSolicitud(
                 baseUrl + "/todos",
-                VerbosHttp.GET
+                VerbosHttp.GET,
+                null,
+                token
             );
 
             if (respuesta.IsSuccessStatusCode)
@@ -46,16 +58,25 @@ namespace StellarMindsWebApp.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-
+        [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR" })]
         public IActionResult Crear()
         {
             return View(new AltaUsuarioModel());
         }
 
+        [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR" })]
         [HttpPost]
         public IActionResult Crear(AltaUsuarioModel altaUsuario)
         {
-            HttpResponseMessage respuesta = ClienteHttpAuxiliar.EnviarSolicitud(baseUrl, VerbosHttp.POST, altaUsuario);
+            string? token = HttpContext.Session.GetString("TokenJWT");
+
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                TempData["Error"] = "Debe iniciar sesión.";
+                return RedirectToAction("Login", "Usuario");
+            }
+
+            HttpResponseMessage respuesta = ClienteHttpAuxiliar.EnviarSolicitud(baseUrl, VerbosHttp.POST, altaUsuario, token);
 
             if (respuesta.IsSuccessStatusCode)
             {
@@ -99,9 +120,12 @@ namespace StellarMindsWebApp.Controllers
             if (respuesta.IsSuccessStatusCode)
             {
                 string jsonResponse = ClienteHttpAuxiliar.ObtenerBody(respuesta);
-                LoginUsuarioModel login = JsonConvert.DeserializeObject<LoginUsuarioModel>(jsonResponse);
-                //HttpContext.Session.SetString("token", login.Token);
-                HttpContext.Session.SetInt32("UsuarioLogeadoId", 1);
+                UsuarioLogueadoModel usuario = JsonConvert.DeserializeObject<UsuarioLogueadoModel>(jsonResponse);
+
+                HttpContext.Session.SetInt32("UsuarioLogeadoId", usuario.Id);
+                HttpContext.Session.SetString("UsuarioLogeadoEmail", usuario.Email);
+                HttpContext.Session.SetString("UsuarioLogeadoRol", usuario.Rol.ToString());
+                HttpContext.Session.SetString("TokenJWT", usuario.Token);
 
                 TempData["Exito"] = "Bienvenido";
                 return RedirectToAction("Index");
@@ -123,7 +147,16 @@ namespace StellarMindsWebApp.Controllers
             return View(loginUsuario);
         }
 
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
 
+            TempData["Exito"] = "Sesión cerrada correctamente.";
+
+            return RedirectToAction("Login", "Usuario");
+        }
+
+        [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR", "COORDINADOR" })]
         //ToDo
         [HttpGet("usuarios-por-equipo/{id}")]
         public ActionResult<IEnumerable<UsuarioModel>> UsuariosPorEquipo(int id)

@@ -2,7 +2,7 @@
 
 namespace StellarMindsWebApp.Models.ObjetoCeleste
 {
-    public class ObjetoCelesteEvaluacionModel
+    public class ObjetoCelesteSelectEvaluacionModel
     {
         public int IdObjetoCeleste { get; set; }
         public string Nombre { get; set; } = string.Empty;

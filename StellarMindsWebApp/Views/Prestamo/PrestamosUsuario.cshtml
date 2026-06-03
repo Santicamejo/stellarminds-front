@@ -6,6 +6,15 @@
 
 <h1>Prestamos del usuario</h1>
 
+@if (TempData["Error"] != null)
+{
+    <p class="text-danger">@TempData["Error"]</p>
+}
+@if (TempData["Exito"] != null)
+{
+    <p class="text-success">@TempData["Exito"]</p>
+}
+
 @if (Model == null || !Model.Any())
 {
     <div>

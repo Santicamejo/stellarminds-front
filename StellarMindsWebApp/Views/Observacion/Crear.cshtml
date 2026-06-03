@@ -4,8 +4,6 @@
 
 @{
     ViewData["Title"] = "Crear observación";
-
-    bool evaluado = ViewBag.Evaluado == true;
 }
 
 <h1>Crear observación</h1>
@@ -36,10 +34,10 @@
                     <select asp-for="PrestamoVinculadoId" class="form-control">
                         <option value="" selected disabled hidden>Seleccione un préstamo</option>
 
-                        @foreach (PrestamoEvaluacionModel prestamo in ViewBag.Prestamos)
+                        @foreach (PrestamoSelectEvaluacionModel prestamo in ViewBag.Prestamos)
                         {
                             <option value="@prestamo.IdPrestamo">
-                                @($"Préstamo {prestamo.IdPrestamo} | Telescopio: {prestamo.TelescopioMarcaModelo} | Visual: {(string.IsNullOrWhiteSpace(prestamo.OcularMarcaModelo) ? prestamo.CamaraMarcaModelo : prestamo.OcularMarcaModelo)}")
+                                @($"{prestamo.IdPrestamo} | Telescopio: {prestamo.TelescopioMarcaModelo} | Visual: {(string.IsNullOrWhiteSpace(prestamo.OcularMarcaModelo) ? prestamo.CamaraMarcaModelo : prestamo.OcularMarcaModelo)}")
                             </option>
                         }
                     </select>
@@ -56,47 +54,71 @@
 
             <div class="form-group mb-3">
                 <label asp-for="ObjetoVisualizadoId" class="control-label"></label>
+
                 @if (ViewBag.ObjetosCelestes != null && ViewBag.ObjetosCelestes.Count > 0)
                 {
                     <select asp-for="ObjetoVisualizadoId" class="form-control">
                         <option value="" selected disabled hidden>Seleccione un objeto celeste</option>
 
-                        @foreach (ObjetoCelesteModel objeto in ViewBag.ObjetosCelestes)
+                        @foreach (ObjetoCelesteSelectEvaluacionModel objeto in ViewBag.ObjetosCelestes)
                         {
-                            <option value="@objeto.Id">
-                                @objeto.Nombre
+                            <option value="@objeto.IdObjetoCeleste">
+                                @objeto.IdObjetoCeleste | @objeto.Nombre
                             </option>
                         }
                     </select>
-                }else{
-                        <div class="alert alert-warning">
-                            No hay objetos celestes disponibles.
-                        </div>
                 }
+                else
+                {
+                    <div class="alert alert-warning">
+                        No hay objetos celestes disponibles.
+                    </div>
+                }
+
                 <span asp-validation-for="ObjetoVisualizadoId" class="text-danger"></span>
             </div>
 
-            <input type="hidden" asp-for="FechaObservacion" />
-            <input type="hidden" asp-for="ResultadoEvaluacion" />
-            <input type="hidden" asp-for="Detalle" />
-            <input type="hidden" asp-for="EsAstrofotografia" />
-
-            @if (evaluado)
+            @if (ViewBag.Respuesta != null)
             {
-                <div class="alert alert-info">
-                    Evaluación realizada.
+                <input type="hidden" name="ResultadoEvaluacion" value="@ViewBag.Respuesta.Indicador" />
+                <input type="hidden" name="Detalle" value="@ViewBag.Respuesta.Detalle" />
+
+                <div class="alert alert-info mt-3">
+                    <h5>Resultado de la evaluación</h5>
+
+                    <p>
+                        <strong>Indicador:</strong> @ViewBag.Respuesta.Indicador
+                    </p>
+
+                    @if (!string.IsNullOrWhiteSpace(ViewBag.Respuesta.Detalle))
+                    {
+                        <p>
+                            <strong>Detalle:</strong> @ViewBag.Respuesta.Detalle
+                        </p>
+                    }
                 </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="FechaObservacion" class="control-label"></label>
+                    <input asp-for="FechaObservacion" type="date" class="form-control" />
+                    <span asp-validation-for="FechaObservacion" class="text-danger"></span>
+                </div>
+            }
+            else
+            {
+                <input type="hidden" asp-for="ResultadoEvaluacion" />
+                <input type="hidden" asp-for="Detalle" />
             }
 
             <div class="form-group mt-3">
 
                 <button type="submit"
                         class="btn btn-secondary"
-                        formaction="@Url.Action("EvaluarAstrofotografia", "Observacion")">
+                        formaction="@Url.Action("Evaluar", "Observacion")">
                     Evaluar
                 </button>
 
-                @if (evaluado)
+                @if (ViewBag.Respuesta != null)
                 {
                     <button type="submit"
                             class="btn btn-primary"

@@ -3,68 +3,132 @@
   "WorkspaceRootPath": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\observacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\observacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\observacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\observacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\prestamo\\prestamoevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\prestamo\\prestamoevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\prestamo\\prestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\prestamo\\prestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\prestamo\\altaprestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\prestamo\\altaprestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\observacion\\altaobservacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\observacion\\altaobservacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\prestamo\\prestamosusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\prestamo\\prestamosusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\editarcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\equipo\\editarcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\usuario\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\usuario\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\observacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\observacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\prestamo\\alta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\prestamo\\alta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\filtros\\rolauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\filtros\\rolauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\observacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\observacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\usuario\\usuariologueadomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\usuario\\usuariologueadomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\usuario\\altausuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\usuario\\altausuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\auxiliar\\clientehttpauxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\auxiliar\\clientehttpauxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\usuario\\loginusuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\usuario\\loginusuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\observacion\\altaobservacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\observacion\\altaobservacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\observacion\\respuestageminimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\observacion\\respuestageminimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\observacion\\observacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\observacion\\observacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\observacion\\solicitudevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\observacion\\solicitudevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\objetoceleste\\objetocelesteselectevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\objetoceleste\\objetocelesteselectevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\objetoceleste\\objetocelestemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\objetoceleste\\objetocelestemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\prestamo\\prestamoselectevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\prestamo\\prestamoselectevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\prestamo\\altaprestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\prestamo\\altaprestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\prestamo\\prestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\prestamo\\prestamomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\crearcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\equipo\\crearcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\errorbodymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\errorbodymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\editarcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\equipo\\editarcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\editarmontura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -87,20 +151,8 @@
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\equipo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\usuario\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,36 +179,8 @@
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\equipo\\telescopiomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\errorbodymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\errorbodymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\observacion\\respuestageminimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\observacion\\respuestageminimodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\observacion\\observacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\observacion\\observacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\objetoceleste\\objetocelesteevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\objetoceleste\\objetocelesteevaluacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\objetoceleste\\objetocelestemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\objetoceleste\\objetocelestemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\equipo\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\crearcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\equipo\\crearcamara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\prestamo\\prestamosusuarioenperiodo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -189,18 +213,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\views\\equipo\\crearocular.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\views\\equipo\\crearocular.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\usuario\\usuariologueadomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\usuario\\usuariologueadomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\usuario\\loginusuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\usuario\\loginusuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\usuario\\altausuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|solutionrelative:stellarmindswebapp\\models\\usuario\\altausuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{648BE942-7687-DAAD-85FB-DA985F9D61A0}|StellarMindsWebApp\\StellarMindsWebApp.csproj|c:\\users\\sm116\\source\\repos\\stellarmindswebapp\\stellarmindswebapp\\models\\equipo\\altaocularmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -280,110 +292,132 @@
         },
         {
           "DockedHeight": 177,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ObservacionController.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\ObservacionController.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\ObservacionController.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\ObservacionController.cs*",
-              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\ObservacionController.cs*",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwFgAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\UsuarioController.cs*",
+              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\UsuarioController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T20:53:46.018Z",
+              "WhenOpened": "2026-05-28T17:45:19.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAACyAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-31T21:27:43.568Z",
+              "WhenOpened": "2026-05-28T21:54:47.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PrestamoModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T18:45:28.404Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Index.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Usuario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Index.cshtml*",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Usuario\\Index.cshtml*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAFwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T18:19:03.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAACcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-01T16:34:41.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PrestamosUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml*",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-01T16:26:06.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PrestamoController.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\PrestamoController.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\PrestamoController.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\PrestamoController.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\PrestamoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\PrestamoController.cs*",
+              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\PrestamoController.cs*",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAqwPMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-31T18:35:23.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PrestamoEvaluacionModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoEvaluacionModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoEvaluacionModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoEvaluacionModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoEvaluacionModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T18:45:03.832Z",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T21:50:30.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AltaPrestamoModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Title": "EquipoController.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\EquipoController.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\EquipoController.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\EquipoController.cs*",
+              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\EquipoController.cs*",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAwwGsCAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T18:44:37.209Z",
+              "WhenOpened": "2026-05-28T18:31:59.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwGcAAABCAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ObservacionController.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\ObservacionController.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\ObservacionController.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\ObservacionController.cs*",
+              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\ObservacionController.cs*",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAwwM4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T17:45:19.439Z",
+              "WhenOpened": "2026-05-31T20:53:46.018Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\HomeController.cs",
@@ -396,98 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AltaObservacionModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T21:23:42.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PrestamosUsuario.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuario.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-01T16:26:06.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Usuario\\Crear.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T21:54:47.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Index.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Usuario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Index.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Usuario\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T18:19:03.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EditarCamara.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T23:38:55.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-01T22:11:09.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ClienteHttpAuxiliar.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwC0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T17:27:36.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Alta.cshtml",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Prestamo\\Alta.cshtml",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Prestamo\\Alta.cshtml",
@@ -500,215 +443,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EditarOcular.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T23:38:18.211Z",
+              "DocumentIndex": 11,
+              "Title": "RolAuthorizeAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Filtros\\RolAuthorizeAttribute.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Filtros\\RolAuthorizeAttribute.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Filtros\\RolAuthorizeAttribute.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Filtros\\RolAuthorizeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T23:51:40.951Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EditarMontura.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T23:39:17.066Z",
+              "WhenOpened": "2026-06-03T00:17:12.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T18:30:39.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "EditarTelescopio.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T23:16:28.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EstadoPrestamo.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "LoginUsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T18:46:17.45Z",
+              "WhenOpened": "2026-05-28T18:04:44.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T19:07:44.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EquipoController.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\EquipoController.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Controllers\\EquipoController.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Controllers\\EquipoController.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Controllers\\EquipoController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "ClienteHttpAuxiliar.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwCMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T18:31:59.557Z",
+              "WhenOpened": "2026-05-28T17:27:36.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADkAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "UsuarioLogueadoModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T18:04:55.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AltaUsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T18:04:06.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Observacion\\Crear.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwG4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-01T16:34:41.565Z",
+              "WhenOpened": "2026-05-31T21:27:43.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Program.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T16:16:01.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UsuarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T18:02:50.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T21:50:30.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CamaraModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T18:43:28.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "MonturaModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T18:43:09.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "OcularModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T18:42:50.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "TelescopioModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T18:41:12.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EquipoModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T19:05:59.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ObservacionModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T21:23:43.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
               "Title": "RespuestaGeminiModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\RespuestaGeminiModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Observacion\\RespuestaGeminiModel.cs",
@@ -721,33 +560,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ErrorBodyModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "ObservacionModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Observacion\\ObservacionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T21:39:37.135Z",
+              "WhenOpened": "2026-05-31T21:23:43.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ObjetoCelesteEvaluacionModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteEvaluacionModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteEvaluacionModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteEvaluacionModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteEvaluacionModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "AltaObservacionModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Observacion\\AltaObservacionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T21:23:42.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ObjetoCelesteSelectEvaluacionModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteSelectEvaluacionModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteSelectEvaluacionModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteSelectEvaluacionModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteSelectEvaluacionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T18:08:00.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 22,
+              "Title": "SolicitudEvaluacionModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\SolicitudEvaluacionModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Observacion\\SolicitudEvaluacionModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Observacion\\SolicitudEvaluacionModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Observacion\\SolicitudEvaluacionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:34:41.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "ObjetoCelesteModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\ObjetoCeleste\\ObjetoCelesteModel.cs",
@@ -760,33 +625,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Usuario\\Login.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T18:30:39.948Z",
+              "DocumentIndex": 25,
+              "Title": "PrestamoSelectEvaluacionModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoSelectEvaluacionModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoSelectEvaluacionModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoSelectEvaluacionModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoSelectEvaluacionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T18:45:03.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Detalles.cshtml",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
-              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAJIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T20:36:19.959Z",
+              "DocumentIndex": 26,
+              "Title": "AltaPrestamoModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Prestamo\\AltaPrestamoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T18:44:37.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 27,
+              "Title": "PrestamoModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Prestamo\\PrestamoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T18:45:28.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "CrearCamara.cshtml",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\CrearCamara.cshtml",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\CrearCamara.cshtml",
@@ -794,12 +672,203 @@
               "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\CrearCamara.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T22:21:42.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-28T22:21:42.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ErrorBodyModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\ErrorBodyModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T21:39:37.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EditarCamara.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarCamara.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T23:38:55.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-01T22:11:09.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EditarOcular.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarOcular.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T23:38:18.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EditarMontura.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarMontura.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T23:39:17.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EditarTelescopio.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\EditarTelescopio.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T23:16:28.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EstadoPrestamo.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Enums\\EstadoPrestamo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T18:46:17.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T19:07:44.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Program.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:16:01.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\UsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T18:02:50.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CamaraModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\CamaraModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T18:43:28.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MonturaModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\MonturaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T18:43:09.467Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
+              "Title": "OcularModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\OcularModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T18:42:50.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TelescopioModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\TelescopioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T18:41:12.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EquipoModel.cs",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
+              "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\EquipoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T19:05:59.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Detalles.cshtml",
+              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
+              "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
+              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
+              "RelativeToolTip": "StellarMindsWebApp\\Views\\Equipo\\Detalles.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAJIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-28T20:36:19.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
               "Title": "PrestamosUsuarioEnPeriodo.cshtml",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuarioEnPeriodo.cshtml",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuarioEnPeriodo.cshtml",
@@ -807,12 +876,11 @@
               "RelativeToolTip": "StellarMindsWebApp\\Views\\Prestamo\\PrestamosUsuarioEnPeriodo.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-31T20:49:44.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T20:49:44.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "EditTelescopioModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EditTelescopioModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\EditTelescopioModel.cs",
@@ -824,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "EditOcularModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EditOcularModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\EditOcularModel.cs",
@@ -836,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "EditMonturaModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EditMonturaModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\EditMonturaModel.cs",
@@ -848,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "EditCamaraModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EditCamaraModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\EditCamaraModel.cs",
@@ -860,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "AltaTelescopioModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\AltaTelescopioModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\AltaTelescopioModel.cs",
@@ -868,12 +936,11 @@
               "RelativeToolTip": "StellarMindsWebApp\\Models\\Equipo\\AltaTelescopioModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T18:41:43.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-28T18:41:43.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "CrearMontura.cshtml",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\CrearMontura.cshtml",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\CrearMontura.cshtml",
@@ -885,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "CrearOcular.cshtml",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\CrearOcular.cshtml",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\CrearOcular.cshtml",
@@ -897,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "CrearTelescopio.cshtml",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Views\\Equipo\\CrearTelescopio.cshtml",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Views\\Equipo\\CrearTelescopio.cshtml",
@@ -909,43 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "UsuarioLogueadoModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\UsuarioLogueadoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T18:04:55.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "LoginUsuarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\LoginUsuarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T18:04:44.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "AltaUsuarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
-              "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
-              "ToolTip": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
-              "RelativeToolTip": "StellarMindsWebApp\\Models\\Usuario\\AltaUsuarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T18:04:06.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "AltaEquipoModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\AltaEquipoModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\AltaEquipoModel.cs",
@@ -957,7 +988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "AltaMonturaModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\AltaMonturaModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\AltaMonturaModel.cs",
@@ -969,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "AltaOcularModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\AltaOcularModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\AltaOcularModel.cs",
@@ -981,7 +1012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "AltaCamaraModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\AltaCamaraModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\AltaCamaraModel.cs",
@@ -993,7 +1024,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\ErrorViewModel.cs",
@@ -1005,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "TipoMontura.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\TipoMontura.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Enums\\TipoMontura.cs",
@@ -1017,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "EquipoDetalleModel.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Models\\Equipo\\EquipoDetalleModel.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Models\\Equipo\\EquipoDetalleModel.cs",
@@ -1029,7 +1060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "VerbosHttp.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\VerbosHttp.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Enums\\VerbosHttp.cs",
@@ -1041,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 62,
               "Title": "TipoSensor.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\TipoSensor.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Enums\\TipoSensor.cs",
@@ -1053,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 61,
               "Title": "TipoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\Enums\\TipoUsuario.cs",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\Enums\\TipoUsuario.cs",
@@ -1065,7 +1096,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "StellarMindsWebApp.csproj",
               "DocumentMoniker": "C:\\Users\\sm116\\source\\repos\\StellarMindsWebApp\\StellarMindsWebApp\\StellarMindsWebApp.csproj",
               "RelativeDocumentMoniker": "StellarMindsWebApp\\StellarMindsWebApp.csproj",

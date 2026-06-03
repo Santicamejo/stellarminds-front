@@ -8,5 +8,6 @@ namespace StellarMindsWebApp.Models.Usuario
         public string Email { get; set; } = string.Empty;
         public string NombreUsuario { get; set; } = string.Empty;
         public TipoUsuario Rol { get; set; }
+        public string Token { get; set; } = string.Empty;
     }
 }
