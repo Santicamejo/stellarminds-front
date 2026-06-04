@@ -400,7 +400,7 @@ namespace StellarMindsWebApp.Controllers
 
             string body = ClienteHttpAuxiliar.ObtenerBody(respuesta);
 
-            TempData["Error"] = "Ocurrió un error inesperado editando el telescopio.";
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error inesperado editando el telescopio.";
 
             if (!string.IsNullOrWhiteSpace(body))
             {
@@ -552,7 +552,7 @@ namespace StellarMindsWebApp.Controllers
 
             string body = ClienteHttpAuxiliar.ObtenerBody(respuesta);
 
-            TempData["Error"] = "Ocurrió un error inesperado editando el telescopio.";
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error inesperado editando el telescopio.";
 
             if (!string.IsNullOrWhiteSpace(body))
             {
@@ -628,7 +628,7 @@ namespace StellarMindsWebApp.Controllers
 
             string body = ClienteHttpAuxiliar.ObtenerBody(respuesta);
 
-            TempData["Error"] = "Ocurrió un error inesperado editando el telescopio.";
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error inesperado editando el telescopio.";
 
             if (!string.IsNullOrWhiteSpace(body))
             {

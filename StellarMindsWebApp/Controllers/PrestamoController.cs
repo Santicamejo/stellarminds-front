@@ -212,10 +212,10 @@ namespace StellarMindsWebApp.Controllers
                 TempData["Error"] = "Debe iniciar sesión para devolver un préstamo.";
                 return RedirectToAction("Login", "Usuario");
             }
-            //ToCheck pasar a put
+
             HttpResponseMessage respuesta = ClienteHttpAuxiliar.EnviarSolicitud(
                 baseUrl + "/devolver?prestamoId=" + prestamoId + "&responsableId=" + responsableId.Value,
-                VerbosHttp.POST,
+                VerbosHttp.PUT,
                 null,
                 token
             );
@@ -228,7 +228,7 @@ namespace StellarMindsWebApp.Controllers
 
             string body = ClienteHttpAuxiliar.ObtenerBody(respuesta);
 
-            TempData["Error"] = "Ocurrió un error inesperado devolviendo el préstamo.";
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error inesperado devolviendo el préstamo.";
 
             if (!string.IsNullOrWhiteSpace(body))
             {
@@ -269,12 +269,12 @@ namespace StellarMindsWebApp.Controllers
                 IEnumerable<PrestamoModel>? prestamos =
                     JsonConvert.DeserializeObject<IEnumerable<PrestamoModel>>(body);
 
-                return View(prestamos);
+                return View(prestamos ?? new List<PrestamoModel>());
             }
 
             string bodyError = ClienteHttpAuxiliar.ObtenerBody(respuesta);
 
-            TempData["Error"] = "Ocurrió un error obteniendo los préstamos del usuario.";
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error obteniendo los préstamos del usuario.";
 
             if (!string.IsNullOrWhiteSpace(bodyError))
             {
@@ -291,9 +291,16 @@ namespace StellarMindsWebApp.Controllers
 
         [RolAuthorizeAttribute(new string[] { "SOCIO" })]
         [HttpGet]
-        public IActionResult PrestamosUsuarioEnPeriodo(int usuarioId, DateTime inicio, DateTime fin )
+        public IActionResult PrestamosUsuarioEnPeriodo()
         {
             string? token = HttpContext.Session.GetString("TokenJWT");
+            int? usuarioLogeadoId = HttpContext.Session.GetInt32("UsuarioLogeadoId");
+
+            if (usuarioLogeadoId <= 0)
+            {
+                TempData["Error"] = "Debe iniciar sesión.";
+                return RedirectToAction("Login", "Usuario");
+            }
 
             if (string.IsNullOrWhiteSpace(token))
             {
@@ -302,7 +309,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuesta = ClienteHttpAuxiliar.EnviarSolicitud(
-                baseUrl + "/usuario/" + usuarioId + "/en-periodo?inicio=" + inicio.ToString("yyyy-MM-dd") + "&fin=" + fin.ToString("yyyy-MM-dd"),
+                baseUrl + "/usuario/" + usuarioLogeadoId,
                 VerbosHttp.GET,
                 null,
                 token
@@ -315,12 +322,65 @@ namespace StellarMindsWebApp.Controllers
                 IEnumerable<PrestamoModel>? prestamos =
                     JsonConvert.DeserializeObject<IEnumerable<PrestamoModel>>(body);
 
-                return View(prestamos);
+                return View(prestamos ?? new List<PrestamoModel>());
             }
 
             string bodyError = ClienteHttpAuxiliar.ObtenerBody(respuesta);
 
-            TempData["Error"] = "Ocurrió un error obteniendo los préstamos del usuario.";
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error obteniendo los préstamos del usuario.";
+            
+            if (!string.IsNullOrWhiteSpace(bodyError))
+            {
+                ErrorApiModel? error = JsonConvert.DeserializeObject<ErrorApiModel>(bodyError);
+
+                if (error != null && !string.IsNullOrWhiteSpace(error.Mensaje))
+                {
+                    TempData["Error"] = error.Mensaje;
+                }
+            }
+
+            return RedirectToAction("Index", "Usuario");
+        }
+
+        [RolAuthorizeAttribute(new string[] { "SOCIO" })]
+        [HttpPost]
+        public IActionResult PrestamosUsuarioEnPeriodo(DateTime inicio, DateTime fin )
+        {
+            int? usuarioLogeadoId = HttpContext.Session.GetInt32("UsuarioLogeadoId");
+            string? token = HttpContext.Session.GetString("TokenJWT");
+
+            if (usuarioLogeadoId <= 0)
+            {
+                TempData["Error"] = "Debe iniciar sesión.";
+                return RedirectToAction("Login", "Usuario");
+            }
+
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                TempData["Error"] = "Debe iniciar sesión.";
+                return RedirectToAction("Login", "Usuario");
+            }
+
+            HttpResponseMessage respuesta = ClienteHttpAuxiliar.EnviarSolicitud(
+                baseUrl + "/usuario/" + usuarioLogeadoId.Value + "/en-periodo?inicio=" + inicio.ToString("yyyy-MM-dd") + "&fin=" + fin.ToString("yyyy-MM-dd"),
+                VerbosHttp.GET,
+                null,
+                token
+            );
+
+            if (respuesta.IsSuccessStatusCode)
+            {
+                string body = ClienteHttpAuxiliar.ObtenerBody(respuesta);
+
+                IEnumerable<PrestamoModel>? prestamos =
+                    JsonConvert.DeserializeObject<IEnumerable<PrestamoModel>>(body);
+
+                return View(prestamos ?? new List<PrestamoModel>());
+            }
+
+            string bodyError = ClienteHttpAuxiliar.ObtenerBody(respuesta);
+
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error obteniendo los préstamos del usuario.";
 
             if (!string.IsNullOrWhiteSpace(bodyError))
             {

@@ -124,7 +124,7 @@ namespace StellarMindsWebApp.Controllers
 
             string body = ClienteHttpAuxiliar.ObtenerBody(respuesta);
 
-            TempData["Error"] = "Ocurrió un error creando la observación.";
+            TempData["Error"] = $"{(int)respuesta.StatusCode} {respuesta.StatusCode} - Ocurrió un error creando la observación.";
 
             if (!string.IsNullOrWhiteSpace(body))
             {

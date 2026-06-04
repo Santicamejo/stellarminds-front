@@ -156,8 +156,8 @@ namespace StellarMindsWebApp.Controllers
             return RedirectToAction("Login", "Usuario");
         }
 
-        [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR", "COORDINADOR" })]
         //ToDo
+        [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR", "COORDINADOR" })]
         [HttpGet("usuarios-por-equipo/{id}")]
         public ActionResult<IEnumerable<UsuarioModel>> UsuariosPorEquipo(int id)
         {
