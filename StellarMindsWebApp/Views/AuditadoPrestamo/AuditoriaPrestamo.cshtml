@@ -1,0 +1,42 @@
+﻿@model StellarMindsWebApp.Models.AuditadoPrestamos.AuditadoPrestamoModel
+
+@{
+    ViewData["Title"] = "Auditoría del préstamo";
+}
+
+<h1>Auditoría del préstamo</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id auditoría</th>
+        <td>@Model.AuditadoPrestamoId</td>
+    </tr>
+    <tr>
+        <th>Acción</th>
+        <td>@Model.Accion</td>
+    </tr>
+    <tr>
+        <th>Fecha</th>
+        <td>@Model.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+    </tr>
+    <tr>
+        <th>Responsable</th>
+        <td>@Model.ResponsableId</td>
+    </tr>
+    <tr>
+        <th>Id préstamo</th>
+        <td>@Model.PrestamoId</td>
+    </tr>
+</table>
+
+<a asp-controller="Prestamo"
+       asp-action="Detalle"
+       asp-route-prestamoId="@Model.PrestamoId"
+       class="btn btn-primary">
+    Ver préstamo
+</a>
+
+<a asp-action="PrestamosPorCoordinador"
+       class="btn btn-secondary">
+    Volver
+</a>

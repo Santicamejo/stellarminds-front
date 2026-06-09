@@ -1,10 +1,10 @@
 ﻿using StellarMindsWebApp.Enums;
 
-namespace StellarMindsWebApp.Models.PrestamoModel
+namespace StellarMindsWebApp.Models.Prestamo
 {
     public class PrestamoModel
     {
-        public int IdPrestamo { get; set; }
+        public int PrestamoId { get; set; }
 
         public DateTime Inicio { get; set; }
         public DateTime Fin { get; set; }

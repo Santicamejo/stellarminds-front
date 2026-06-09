@@ -1,143 +1,95 @@
-﻿@model IEnumerable<StellarMindsWebApp.Models.PrestamoModel.PrestamoModel>
+﻿@using StellarMindsWebApp.Enums
+@model StellarMindsWebApp.Models.Prestamo.BusquedaMesAnioPrestamosModel
 
 @{
-    ViewData["Title"] = "PrestamosUsuarioEnPeriodo";
+    ViewData["Title"] = "Mis préstamos";
 }
 
-<h1>Mis Prestamos</h1>
+<h1>Mis préstamos</h1>
 
-<form asp-controller="Prestamo" asp-action="PrestamosUsuarioEnPeriodo" method="post" class="mb-4">
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
 
-    <div class="row">
-        <div class="col-md-6">
-            <label>Mes</label>
-            <select name="mes" class="form-control" required>
-                <option value="">Seleccione un mes</option>
-                <option value="1">Enero</option>
-                <option value="2">Febrero</option>
-                <option value="3">Marzo</option>
-                <option value="4">Abril</option>
-                <option value="5">Mayo</option>
-                <option value="6">Junio</option>
-                <option value="7">Julio</option>
-                <option value="8">Agosto</option>
-                <option value="9">Setiembre</option>
-                <option value="10">Octubre</option>
-                <option value="11">Noviembre</option>
-                <option value="12">Diciembre</option>
-            </select>
-        </div>
+<form asp-controller="Prestamo"
+      asp-action="PrestamosUsuarioEnPeriodo"
+      method="get"
+      class="mb-4">
 
-        <div class="col-md-6">
-            <label>Año</label>
-            <input type="number"
-                   name="anio"
+    <div class="row align-items-end">
+
+        <div class="col-md-4">
+            <label class="form-label">Mes y año</label>
+
+            <input type="month"
+                   name="MesAnio"
                    class="form-control"
-                   min="2000"
-                   max="@DateTime.Now.Year"
-                   value="@DateTime.Now.Year"
-                   required />
+                   value="@Model.MesAnio.ToString("yyyy-MM")" />
         </div>
+
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">
+                Buscar
+            </button>
+        </div>
+
     </div>
 
-    <button type="submit" class="btn btn-primary mt-3">
-        Buscar
-    </button>
 </form>
 
-@if (Model == null || !Model.Any())
+@if (Model.Prestamos == null || !Model.Prestamos.Any())
 {
     <div>
-        <p>No hay prestamos para mostrar</p>
+        <p>No hay préstamos para mostrar en el mes seleccionado.</p>
     </div>
 }
 else
 {
-    <table class="table">
+    <table class="table table-striped">
         <thead>
             <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.IdPrestamo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Inicio)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Fin)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.EquipoVisualId)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.EquipoVisualMarcaModelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.MonturaId)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.MonturaMarcaModelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.TelescopioId)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.TelescopioMarcaModelo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.SocioId)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.SocioNombreApellido)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Estado)
-                </th>
-                <th></th>
+                <th>Id préstamo</th>
+                <th>Inicio</th>
+                <th>Fin</th>
+                <th>Equipo visual</th>
+                <th>Montura</th>
+                <th>Telescopio</th>
+                <th>Socio</th>
+                <th>Estado</th>
             </tr>
         </thead>
+
         <tbody>
-            @foreach (var item in Model)
+            @foreach (var item in Model.Prestamos)
             {
                 <tr>
+                    <td>@item.PrestamoId</td>
+                    <td>@item.Inicio.ToString("dd/MM/yyyy")</td>
+                    <td>@item.Fin.ToString("dd/MM/yyyy")</td>
+                    <td>@item.EquipoVisualMarcaModelo</td>
+                    <td>@item.MonturaMarcaModelo</td>
+                    <td>@item.TelescopioMarcaModelo</td>
+                    <td>@item.SocioNombreApellido</td>
+                    @{
+                        bool estaAtrasado = item.Estado == EstadoPrestamo.PRESTADO
+                                            && DateTime.Today > item.Fin.Date;
+                    }
+
                     <td>
-                        @Html.DisplayFor(modelItem => item.IdPrestamo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Inicio)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Fin)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EquipoVisualId)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EquipoVisualMarcaModelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.MonturaId)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.MonturaMarcaModelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TelescopioId)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TelescopioMarcaModelo)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.SocioId)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.SocioNombreApellido)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Estado)
+                        @if (estaAtrasado)
+                        {
+                            <p class="fw-bolder text-danger">ATRASADO</p>
+                        }
+                        else
+                        {
+                            @item.Estado
+                        }
                     </td>
                 </tr>
             }
         </tbody>
     </table>
 }
-

@@ -1,4 +1,4 @@
-namespace DTOs.DTOs.Equipo
+namespace StellarMindsWebApp.Models.Equipo
 {
     public class EditOcularModel
     {

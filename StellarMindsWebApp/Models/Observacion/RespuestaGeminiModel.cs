@@ -1,7 +1,7 @@
 using StellarMinds.Enums;
 using System.Text.Json.Serialization;
 
-namespace Models.Observacion;
+namespace StellarMindsWebApp.Models.Observacion;
 
 public class RespuestaGeminiModel
 {

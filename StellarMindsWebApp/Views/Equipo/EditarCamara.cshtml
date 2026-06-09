@@ -1,4 +1,5 @@
-﻿@model DTOs.DTOs.Equipo.EditCamaraModel
+﻿@using StellarMinds.Enums
+@model StellarMindsWebApp.Models.Equipo.EditCamaraModel
 
 <h4>EditCamaraModel</h4>
 <hr />
@@ -28,7 +29,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="TipoSensor" class="control-label"></label>
-                <input asp-for="TipoSensor" class="form-control" />
+
+                <select asp-for="TipoSensor"
+                        asp-items="Html.GetEnumSelectList<TipoSensor>()"
+                        class="form-control">
+                    <option value="">Seleccione un tipo de sensor</option>
+                </select>
+
                 <span asp-validation-for="TipoSensor" class="text-danger"></span>
             </div>
             <div class="form-group">

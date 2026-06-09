@@ -36,12 +36,22 @@
                                     Equipos
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="AuditadoPrestamo" asp-action="PrestamosPorCoordinador">
+                                    Auditorias
+                                </a>
+                            </li>
                         }
                         @if (rol == "ADMINISTRADOR" || rol == "COORDINADOR")
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index">
                                     Usuarios
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="UsuariosPorTelescopio">
+                                    Usuarios por telescopio
                                 </a>
                             </li>
                         }
@@ -72,6 +82,11 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Logout">
                                     Logout
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ObjetoCeleste" asp-action="Ranking">
+                                    Objetos Celestes
                                 </a>
                             </li>
                         }

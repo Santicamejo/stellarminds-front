@@ -1,6 +1,7 @@
 ﻿using StellarMinds.Enums;
 
-namespace Models.Observacion;
+namespace StellarMindsWebApp.Models.Observacion;
+
     public class ObservacionModel
     {
         public int Id { get; set; }

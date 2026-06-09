@@ -1,6 +1,6 @@
 ﻿using StellarMinds.Enums;
 
-namespace Models.Observacion;
+namespace StellarMindsWebApp.Models.Observacion;
 
 public class AltaObservacionModel
 {

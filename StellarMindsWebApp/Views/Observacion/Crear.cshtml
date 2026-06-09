@@ -1,6 +1,6 @@
 ﻿@using StellarMindsWebApp.Models.ObjetoCeleste
-@using StellarMindsWebApp.Models.PrestamoModel
-@model Models.Observacion.AltaObservacionModel
+@using StellarMindsWebApp.Models.Prestamo
+@model StellarMindsWebApp.Models.Observacion.AltaObservacionModel
 
 @{
     ViewData["Title"] = "Crear observación";
@@ -36,8 +36,8 @@
 
                         @foreach (PrestamoSelectEvaluacionModel prestamo in ViewBag.Prestamos)
                         {
-                            <option value="@prestamo.IdPrestamo">
-                                @($"{prestamo.IdPrestamo} | Telescopio: {prestamo.TelescopioMarcaModelo} | Visual: {(string.IsNullOrWhiteSpace(prestamo.OcularMarcaModelo) ? prestamo.CamaraMarcaModelo : prestamo.OcularMarcaModelo)}")
+                            <option value="@prestamo.PrestamoId">
+                                @($"{prestamo.PrestamoId} | Telescopio: {prestamo.TelescopioMarcaModelo} | Visual: {(string.IsNullOrWhiteSpace(prestamo.OcularMarcaModelo) ? prestamo.CamaraMarcaModelo : prestamo.OcularMarcaModelo)}")
                             </option>
                         }
                     </select>

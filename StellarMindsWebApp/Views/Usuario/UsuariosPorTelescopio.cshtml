@@ -1,0 +1,74 @@
+﻿@model StellarMindsWebApp.Models.Usuario.UsuariosPorTelescopioModel
+
+@{
+    ViewData["Title"] = "Usuarios por telescopio";
+}
+
+<h1>Usuarios por telescopio</h1>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+
+<form asp-controller="Usuario"
+      asp-action="UsuariosPorTelescopio"
+      method="get"
+      class="mb-4">
+
+    <div class="row align-items-end">
+        <div class="col-md-4">
+            <label asp-for="TelescopioId" class="form-label">Telescopio</label>
+
+            <select asp-for="TelescopioId" class="form-control">
+                <option value="">Seleccione un telescopio</option>
+
+                @foreach (var telescopio in Model.Telescopios)
+                {
+                    <option value="@telescopio.Id">
+                        @telescopio.Id | @telescopio.Marca @telescopio.Modelo
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">
+                Buscar
+            </button>
+        </div>
+    </div>
+
+</form>
+
+@if (Model.Usuarios == null || !Model.Usuarios.Any())
+{
+    <p>No hay usuarios para mostrar.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id usuario</th>
+                <th>Nombre</th>
+                <td>Apellido</td>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var usuario in Model.Usuarios)
+            {
+                <tr>
+                    <td>@usuario.Id</td>
+                    <td>@usuario.Nombre</td>
+                    <td>@usuario.Apellido</td>
+                    <td>@usuario.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

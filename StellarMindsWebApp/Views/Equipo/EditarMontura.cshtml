@@ -1,4 +1,5 @@
-﻿@model DTOs.DTOs.Equipo.EditMonturaModel
+﻿@using StellarMinds.Enums
+@model StellarMindsWebApp.Models.Equipo.EditMonturaModel
 
 <h4>EditMonturaModel</h4>
 <hr />
@@ -28,7 +29,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="TipoMontura" class="control-label"></label>
-                <input asp-for="TipoMontura" class="form-control" />
+
+                <select asp-for="TipoMontura"
+                        asp-items="Html.GetEnumSelectList<TipoMontura>()"
+                        class="form-control">
+                    <option value="">Seleccione un tipo de montura</option>
+                </select>
+
                 <span asp-validation-for="TipoMontura" class="text-danger"></span>
             </div>
             <div class="form-group">

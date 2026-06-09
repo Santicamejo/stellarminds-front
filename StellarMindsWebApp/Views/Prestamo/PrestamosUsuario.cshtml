@@ -1,4 +1,4 @@
-﻿@model IEnumerable<StellarMindsWebApp.Models.PrestamoModel.PrestamoModel>
+﻿@model IEnumerable<StellarMindsWebApp.Models.Prestamo.PrestamoModel>
 
 @{
     ViewData["Title"] = "PrestamosUsuario";
@@ -27,7 +27,7 @@ else
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.IdPrestamo)
+                    @Html.DisplayNameFor(model => model.PrestamoId)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Inicio)
@@ -70,7 +70,7 @@ else
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.IdPrestamo)
+                        @Html.DisplayFor(modelItem => item.PrestamoId)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Inicio)
@@ -108,7 +108,7 @@ else
                     <td>
                         <form asp-controller="Prestamo"
                               asp-action="Devolver"
-                              asp-route-prestamoId="@item.IdPrestamo"
+                              asp-route-PrestamoId="@item.PrestamoId"
                               method="post"
                               style="display:inline;">
 

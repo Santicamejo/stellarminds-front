@@ -1,6 +1,6 @@
 using StellarMinds.Enums;
 
-namespace DTOs.DTOs.Equipo
+namespace StellarMindsWebApp.Models.Equipo
 {
     public class AltaMonturaModel : AltaEquipoModel
     {

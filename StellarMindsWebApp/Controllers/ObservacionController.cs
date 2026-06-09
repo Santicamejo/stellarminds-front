@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Models.Observacion;
 using Newtonsoft.Json;
 using StellarMindsWebApp.Auxiliar;
 using StellarMindsWebApp.Enums;
@@ -8,7 +6,7 @@ using StellarMindsWebApp.Filtros;
 using StellarMindsWebApp.Models;
 using StellarMindsWebApp.Models.ObjetoCeleste;
 using StellarMindsWebApp.Models.Observacion;
-using StellarMindsWebApp.Models.PrestamoModel;
+using StellarMindsWebApp.Models.Prestamo;
 
 namespace StellarMindsWebApp.Controllers
 {

@@ -1,0 +1,81 @@
+﻿@model StellarMindsWebApp.Models.AuditadoPrestamos.PrestamosPorCoordinadorModel
+
+@{
+    ViewData["Title"] = "Préstamos por coordinador";
+}
+
+<h1>Préstamos por coordinador</h1>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+
+<form asp-action="PrestamosPorCoordinador" method="get" class="mb-4">
+    <div class="row align-items-end">
+        <div class="col-md-4">
+            <label class="form-label">Coordinador</label>
+
+            <select name="coordinadorId" class="form-control">
+                <option value="">Seleccione un coordinador</option>
+
+                @foreach (var coordinador in Model.Coordinadores)
+                {
+                    <option value="@coordinador.Id"
+                            selected="@(Model.CoordinadorIdSeleccionado == coordinador.Id)">
+                        @coordinador.Id | @coordinador.Nombre @coordinador.Apellido
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">
+                Buscar
+            </button>
+        </div>
+    </div>
+</form>
+
+@if (Model.PrestamosAuditados != null && Model.PrestamosAuditados.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id Prestamo</th>
+                <th>Socio</th>
+                <th>Fecha auditado</th>
+                <th>Accion</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var prestamo in Model.PrestamosAuditados)
+            {
+                <tr>
+                    <td>@prestamo.PrestamoId</td>
+                    <td>@prestamo.SocioNombreApellido</td>
+                    <td>@prestamo.FechaAuditoria</td>
+                    <td>@prestamo.Accion</td>
+                    <td>
+                        <a asp-controller="AuditadoPrestamo"
+                               asp-action="AuditoriaPrestamo"
+                               asp-route-IdAuditoria="@prestamo.IdAuditoria"
+                               class="btn btn-info btn-sm">
+                            Ver auditoría
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Model.CoordinadorIdSeleccionado != null)
+{
+    <div class="alert alert-info">
+        No se encontraron préstamos auditados por este coordinador.
+    </div>
+}

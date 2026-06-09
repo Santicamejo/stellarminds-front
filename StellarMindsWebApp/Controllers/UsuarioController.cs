@@ -5,6 +5,7 @@ using StellarMindsWebApp.Auxiliar;
 using StellarMindsWebApp.Enums;
 using StellarMindsWebApp.Filtros;
 using StellarMindsWebApp.Models;
+using StellarMindsWebApp.Models.Equipo;
 using StellarMindsWebApp.Models.Usuario;
 
 namespace StellarMindsWebApp.Controllers
@@ -156,19 +157,88 @@ namespace StellarMindsWebApp.Controllers
             return RedirectToAction("Login", "Usuario");
         }
 
-        //ToDo
-        [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR", "COORDINADOR" })]
-        [HttpGet("usuarios-por-equipo/{id}")]
-        public ActionResult<IEnumerable<UsuarioModel>> UsuariosPorEquipo(int id)
+
+        [RolAuthorizeAttribute(new string[] { "COORDINADOR", "ADMINISTRADOR" })]
+        [HttpGet]
+        public IActionResult UsuariosPorTelescopio(UsuariosPorTelescopioModel model)
         {
-            try
+            string? token = HttpContext.Session.GetString("TokenJWT");
+
+            if (string.IsNullOrWhiteSpace(token))
             {
-                return Ok();
+                TempData["Error"] = "Debe iniciar sesión.";
+                return RedirectToAction("Login", "Usuario");
             }
-            catch (Exception e)
+
+            HttpResponseMessage respuestaTelescopios = ClienteHttpAuxiliar.EnviarSolicitud(
+                "http://localhost:5196/api/Equipo/telescopios",
+                VerbosHttp.GET,
+                null,
+                token
+            );
+
+            if (respuestaTelescopios.IsSuccessStatusCode)
             {
-                return StatusCode(500);
+                string bodyTelescopios = ClienteHttpAuxiliar.ObtenerBody(respuestaTelescopios);
+
+                IEnumerable<TelescopioModel>? telescopios =
+                    JsonConvert.DeserializeObject<IEnumerable<TelescopioModel>>(bodyTelescopios);
+
+                model.Telescopios = telescopios ?? new List<TelescopioModel>();
             }
+            else
+            {
+                model.Telescopios = new List<TelescopioModel>();
+            }
+
+            if (model.TelescopioId == null || model.TelescopioId <= 0)
+            {
+                return View(model);
+            }
+
+            HttpResponseMessage respuestaUsuarios = ClienteHttpAuxiliar.EnviarSolicitud(
+                baseUrl + "/por-telescopio/" + model.TelescopioId.Value,
+                VerbosHttp.GET,
+                null,
+                token
+            );
+
+            if (respuestaUsuarios.IsSuccessStatusCode)
+            {
+                string bodyUsuarios = ClienteHttpAuxiliar.ObtenerBody(respuestaUsuarios);
+
+                IEnumerable<UsuarioModel>? usuarios =
+                    JsonConvert.DeserializeObject<IEnumerable<UsuarioModel>>(bodyUsuarios);
+
+                model.Usuarios = usuarios ?? new List<UsuarioModel>();
+
+                return View(model);
+            }
+
+            string bodyError = ClienteHttpAuxiliar.ObtenerBody(respuestaUsuarios);
+
+            TempData["Error"] = $"{(int)respuestaUsuarios.StatusCode} {respuestaUsuarios.StatusCode} - Ocurrió un error obteniendo los usuarios.";
+
+            if (!string.IsNullOrWhiteSpace(bodyError))
+            {
+                try
+                {
+                    ErrorApiModel? error = JsonConvert.DeserializeObject<ErrorApiModel>(bodyError);
+
+                    if (error != null && !string.IsNullOrWhiteSpace(error.Mensaje))
+                    {
+                        TempData["Error"] = error.Mensaje;
+                    }
+                }
+                catch (JsonReaderException)
+                {
+                    TempData["Error"] = bodyError;
+                }
+            }
+
+            model.Usuarios = new List<UsuarioModel>();
+
+            return View(model);
         }
 
 

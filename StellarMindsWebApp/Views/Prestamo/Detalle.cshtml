@@ -1,0 +1,70 @@
+﻿@model StellarMindsWebApp.Models.Prestamo.PrestamoModel
+
+@{
+    ViewData["Title"] = "Detalle del préstamo";
+}
+
+<h1>Detalle del préstamo</h1>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+
+<div class="card">
+    <div class="card-header">
+        Préstamo #@Model.PrestamoId
+    </div>
+
+    <div class="card-body">
+        <dl class="row">
+
+            <dt class="col-sm-3">Id préstamo</dt>
+            <dd class="col-sm-9">@Model.PrestamoId</dd>
+
+            <dt class="col-sm-3">Fecha inicio</dt>
+            <dd class="col-sm-9">@Model.Inicio.ToShortDateString()</dd>
+
+            <dt class="col-sm-3">Fecha fin</dt>
+            <dd class="col-sm-9">@Model.Fin.ToShortDateString()</dd>
+
+            <dt class="col-sm-3">Socio</dt>
+            <dd class="col-sm-9">@Model.SocioNombreApellido</dd>
+
+            <dt class="col-sm-3">Id socio</dt>
+            <dd class="col-sm-9">@Model.SocioId</dd>
+
+            <dt class="col-sm-3">Telescopio</dt>
+            <dd class="col-sm-9">@Model.TelescopioMarcaModelo</dd>
+
+            <dt class="col-sm-3">Id telescopio</dt>
+            <dd class="col-sm-9">@Model.TelescopioId</dd>
+
+            <dt class="col-sm-3">Montura</dt>
+            <dd class="col-sm-9">@Model.MonturaMarcaModelo</dd>
+
+            <dt class="col-sm-3">Id montura</dt>
+            <dd class="col-sm-9">@Model.MonturaId</dd>
+
+            <dt class="col-sm-3">Equipo visual</dt>
+            <dd class="col-sm-9">@Model.EquipoVisualMarcaModelo</dd>
+
+            <dt class="col-sm-3">Id equipo visual</dt>
+            <dd class="col-sm-9">@Model.EquipoVisualId</dd>
+
+            <dt class="col-sm-3">Estado</dt>
+            <dd class="col-sm-9">@Model.Estado</dd>
+
+        </dl>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-controller="AuditadoPrestamo"
+           asp-action="PrestamosPorCoordinador"
+           class="btn btn-secondary">
+        Volver
+    </a>
+</div>

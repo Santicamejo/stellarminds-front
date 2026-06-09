@@ -1,13 +1,10 @@
-﻿using DTOs.DTOs.Equipo;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using StellarMindsWebApp.Auxiliar;
 using StellarMindsWebApp.Enums;
 using StellarMindsWebApp.Filtros;
 using StellarMindsWebApp.Models;
 using StellarMindsWebApp.Models.Equipo;
-using StellarMindsWebApp.Models.Usuario;
 
 namespace StellarMindsWebApp.Controllers
 {
@@ -27,7 +24,7 @@ namespace StellarMindsWebApp.Controllers
                 return RedirectToAction("Login", "Usuario");
             }
 
-            HttpResponseMessage respuesta = 
+            HttpResponseMessage respuesta =
                 ClienteHttpAuxiliar.EnviarSolicitud(baseUrl + "/todos", VerbosHttp.GET, null, token);
 
             if (respuesta.IsSuccessStatusCode)
