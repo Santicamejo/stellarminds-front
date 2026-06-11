@@ -11,7 +11,7 @@ namespace StellarMindsWebApp.Controllers
     public class EquipoController : Controller
     {
 
-        private string baseUrl = "http://localhost:5196/api/Equipo";
+        private string baseUrl = "http://ObliStellarMindsM3A.somee.com/api/Equipo";
 
         [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR" })]
         public IActionResult Index()

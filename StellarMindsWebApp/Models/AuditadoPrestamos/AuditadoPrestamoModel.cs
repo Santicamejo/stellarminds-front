@@ -7,7 +7,7 @@ namespace StellarMindsWebApp.Models.AuditadoPrestamos
         public int AuditadoPrestamoId { get; set; }
         public EstadoPrestamo Accion { get; set; }
         public DateTime Fecha { get; set; }
-        public int ResponsableId { get; set; }
+        public string ResponsableNombreApellido { get; set; } = string.Empty;
         public int PrestamoId { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace StellarMindsWebApp.Controllers
     public class AuditadoPrestamoController : Controller
     {
 
-        private string baseUrl = "http://localhost:5196/api/AuditadoPrestamo";
+        private string baseUrl = "http://ObliStellarMindsM3A.somee.com/api/AuditadoPrestamo";
 
         [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR" })]
         public ActionResult PrestamosPorCoordinador(int? coordinadorId)
@@ -31,7 +31,7 @@ namespace StellarMindsWebApp.Controllers
             prestamosPorCoordinadorModel.CoordinadorIdSeleccionado = coordinadorId;
 
             HttpResponseMessage respuestaUsuarios = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/usuario/coordinadores",
+                "http://ObliStellarMindsM3A.somee.com/api/usuario/coordinadores",
                 VerbosHttp.GET,
                 null,
                 token

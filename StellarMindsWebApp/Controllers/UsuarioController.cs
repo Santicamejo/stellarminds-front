@@ -13,7 +13,7 @@ namespace StellarMindsWebApp.Controllers
     public class UsuarioController : Controller
     {
 
-        private string baseUrl = "http://localhost:5196/api/usuario";
+        private string baseUrl = "http://ObliStellarMindsM3A.somee.com/api/usuario";
 
         [RolAuthorizeAttribute(new string[] { "ADMINISTRADOR", "COORDINADOR" })]
         public IActionResult Index()
@@ -171,7 +171,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuestaTelescopios = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Equipo/telescopios",
+                "http://ObliStellarMindsM3A.somee.com/api/Equipo/telescopios",
                 VerbosHttp.GET,
                 null,
                 token

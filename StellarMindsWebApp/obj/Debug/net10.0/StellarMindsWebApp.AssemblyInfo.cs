@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StellarMindsWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+011459f159d7cf8082355264ebed3488f19394e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d56498d147dfb2b0013647b5b9288badf1b2a1be")]
 [assembly: System.Reflection.AssemblyProductAttribute("StellarMindsWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StellarMindsWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

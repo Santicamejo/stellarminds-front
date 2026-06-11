@@ -12,12 +12,12 @@ namespace StellarMindsWebApp.Controllers
 {
     public class ObservacionController : Controller
     {
-        private string baseUrl = "http://localhost:5196/api/Observacion";
+        private string baseUrl = "http://ObliStellarMindsM3A.somee.com/api/Observacion";
 
         private void CargarDatosCrearObservacion(int usuarioId, string token)
         {
             HttpResponseMessage respuestaPrestamos = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Prestamo/vigentes/" + usuarioId,
+                "http://ObliStellarMindsM3A.somee.com/api/Prestamo/vigentes/" + usuarioId,
                 VerbosHttp.GET,
                 null,
                 token
@@ -38,7 +38,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuestaObjetosCelestes = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/ObjetoCeleste/para-evaluacion",
+                "http://ObliStellarMindsM3A.somee.com/api/ObjetoCeleste/para-evaluacion",
                 VerbosHttp.GET,
                 null,
                 token

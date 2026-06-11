@@ -11,7 +11,7 @@ namespace StellarMindsWebApp.Controllers
     public class ObjetoCelesteController : Controller
     {
         
-        private string baseUrl = "http://localhost:5196/api/ObjetoCeleste";
+        private string baseUrl = "http://ObliStellarMindsM3A.somee.com/api/ObjetoCeleste";
 
         [HttpGet]
         public IActionResult Ranking()

@@ -16,7 +16,7 @@ namespace StellarMindsWebApp.Controllers
         private void CargarDatosAltaPrestamo(string token) 
         {
             HttpResponseMessage respuestaTelescopios = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Equipo/telescopios",
+                "http://ObliStellarMindsM3A.somee.com/api/Equipo/telescopios",
                 VerbosHttp.GET,
                 null,
                 token
@@ -37,7 +37,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuestaMonturas = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Equipo/monturas",
+                "http://ObliStellarMindsM3A.somee.com/api/Equipo/monturas",
                 VerbosHttp.GET,
                 null,
                 token
@@ -58,7 +58,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuestaOculares = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Equipo/oculares",
+                "http://ObliStellarMindsM3A.somee.com/api/Equipo/oculares",
                 VerbosHttp.GET,
                 null,
                 token
@@ -79,7 +79,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuestaCamaras = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Equipo/camaras",
+                "http://ObliStellarMindsM3A.somee.com/api/Equipo/camaras",
                 VerbosHttp.GET,
                 null,
                 token
@@ -100,7 +100,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuestaSocios = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Usuario/todos",
+                "http://ObliStellarMindsM3A.somee.com/api/Usuario/todos",
                 VerbosHttp.GET,
                 null,
                 token
@@ -121,7 +121,7 @@ namespace StellarMindsWebApp.Controllers
             }
         }
 
-        private string baseUrl = "http://localhost:5196/api/Prestamo";
+        private string baseUrl = "http://ObliStellarMindsM3A.somee.com/api/Prestamo";
 
         [RolAuthorizeAttribute(new string[] { "COORDINADOR" })]
         [HttpGet]
@@ -357,7 +357,7 @@ namespace StellarMindsWebApp.Controllers
             }
 
             HttpResponseMessage respuesta = ClienteHttpAuxiliar.EnviarSolicitud(
-                "http://localhost:5196/api/Equipo/disponibilidad/" + equipoId,
+                "http://ObliStellarMindsM3A.somee.com/api/Equipo/disponibilidad/" + equipoId,
                 VerbosHttp.GET,
                 null,
                 token
